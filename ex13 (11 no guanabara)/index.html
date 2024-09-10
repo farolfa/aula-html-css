@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir este site em varios dispositivos diferentes ou simplesmente aumente e dimua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 725px)" srcset="imagens/pequeno.png" type="image/png">
+<source media="(max-width: 1028px)" srcset="imagens/medio.png" type="image/png">
+
+<img src="imagens/grande.png" alt="imagem flexivel">
+    </picture>
+    <p><audio src="midia/Vegetto (Dragon Ball Z) - Saiyajins ｜ M4rkim feat. Basara [A3R_vc7ndo0].f140.m4a" controls></audio></p>
+    <video poster="midia/images.jpg" src="midia/20240811_111728.mp4" width="400" controls></video>
+    <h1>inserindo videos do Youtube</h1>
+    <iframe width="600" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=tAOiXDaI6vyqdzd3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+</body>
+</html>
