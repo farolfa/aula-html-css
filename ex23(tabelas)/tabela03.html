@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+        text-transform: uppercase;
+        border-collapse: collapse;
+        width: 400px;
+    }
+    td{
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Mesclagem de celulas</h1>
+    <table>
+        <tr>
+            <td colspan="2">a</td>
+            
+            <td>c</td>
+        </tr>
+
+        <tr><td>d</td>
+            <td rowspan="3">e</td>
+            <td rowspan="3" >f</td>
+        </tr>
+
+        <tr><td >g</td>
+            
+            </tr>
+
+        <tr><td>j</td>
+            
+            
+
+    </table>
+</body>
+</html>
