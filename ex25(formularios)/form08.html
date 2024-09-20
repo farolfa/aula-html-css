@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios inacabaveis</title>
+</head>
+<body>
+    <form action="" method="post">
+
+        <p>numero 1 <input type="number" name="n1" id="in1" max="50" min="0" oninput="soma.innerHTML=Number(in1.value) + Number(in2.value)"></p>
+
+        <p>numero 2 <input type="number" name="n2" id="in2" max="50" min="0" oninput="soma.innerHTML=Number(in1.value)+ Number(in2.value)"></p>
+        <output name="soma" id="soma">0</output>
+
+        <p><input type="range" name="ran" id="iran" oninput="nan.innerHTML=Number(iran.value)"></p>
+        <output id="nan">0</output>
+        
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

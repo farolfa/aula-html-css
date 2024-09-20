@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios inacabaveis</title>
+</head>
+<body>
+    <form action="" method="post">
+
+        
+        <p><label for="">ano que voce nasceu: </label><input type="number" name="ano" id="iano" max="2020" min="1900" 
+            oninput="nasc.innerHTML= 2024 - Number(iano.value) "></p>
+        <output id="nasc">0</output>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
