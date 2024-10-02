@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu com flexbox</title>
+
+    <style>
+        @media screen and (min-width:500px) and (max-width:549px){
+            html body{
+                
+            }
+            html header{
+                flex-flow: column nowrap;
+                height: 250px;
+                
+            }
+            html nav{
+                display: block;
+                margin: auto;
+                
+                
+            }
+            .item{
+                margin: 15px;
+            }
+            html nav a{
+            padding: 10px 150px;
+                    
+            }
+            html header h1{
+                margin: auto;
+            }
+
+        }
+        @media screen and (min-width:550px) and (max-width:628px)  {
+            html header {
+                height: 90px;
+                
+                
+            }
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: lightgray;
+        }
+        header{
+            
+            display: flex;
+            justify-content:space-between ;
+            flex-flow: row wrap ;
+            background-color: rgb(133, 133, 133);
+            padding: 10px;
+            height: 70px;
+
+        }
+
+        header a{
+            padding: 10px;
+            background-color: black;
+            text-decoration: none;
+            color: white;
+            border-radius: 7px;
+
+        }
+        a:hover{
+            background-color: bisque;
+            color: black;
+            transition: .3s;
+        }
+        main{
+            background-color: white;
+            max-width: 900px;
+            margin: auto;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 3px black;
+        }
+        .item{
+
+            
+            flex:0 1 90px ;
+            padding: 4px;
+            
+        }
+       header h1{
+            color: rgba(250, 235, 215, 0.521);
+            font-size: 40px;
+            
+            
+            align-self: self-start;
+            
+           
+        }
+        nav{
+            display: inline-flex;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <div class="item"><a href="" >Opção 1</a></div>
+            <div class="item"><a href="" >Opção 2</a></div>
+            <div class="item"><a href="" >Opção 3</a></div>
+            <div class="item"><a href="" >Opção 4</a></div>
+            <div class="item"><a href="" >Opção 5</a></div>
+        </nav>
+        </header>
+   
+    <main>
+        <h1>teste de flexbox</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quod facilis, animi exercitationem incidunt quaerat nemo nesciunt cumque, aut ex necessitatibus ut dignissimos aliquam quibusdam nam odit voluptatibus. Earum, incidunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis impedit veritatis, voluptatibus in vel suscipit cumque aspernatur voluptatum. Iste ipsa nam eius, placeat voluptatem mollitia laudantium neque pariatur accusamus commodi? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa excepturi dolorum exercitationem ea magni earum ullam illo voluptatum eligendi dignissimos non eveniet quos nulla, magnam veritatis iure beatae repudiandae similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis id consectetur consequatur, distinctio magnam suscipit quae quia autem ducimus libero dolores quibusdam velit tempora doloremque fugit, aliquid ea enim harum.</p>
+    </main>
+
+</body>
+</html>
